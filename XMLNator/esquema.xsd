@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="xml">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="encabezado">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="producto">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="codigo" type="xs:unsignedByte" />
+                    <xs:element name="nombre" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="poliza">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="numero" type="xs:unsignedShort" />
+                    <xs:element name="codigo" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="vigencia">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="inicial" type="xs:string" />
+                    <xs:element name="final" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="contratante">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nombre" type="xs:string" />
+                    <xs:element name="nit" type="xs:unsignedInt" />
+                    <xs:element name="direccion">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="contratante" type="xs:string" />
+                          <xs:element name="cobro" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="asegurado">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nombre" type="xs:string" />
+                    <xs:element name="apellido" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="detalles">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="certificado">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="numero" type="xs:unsignedShort" />
+                    <xs:element name="nombre" type="xs:string" />
+                    <xs:element name="suma" type="xs:unsignedInt" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="vehiculo">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="marca" type="xs:string" />
+                    <xs:element name="modelo" type="xs:unsignedShort" />
+                    <xs:element name="linea" type="xs:string" />
+                    <xs:element name="chasis" type="xs:string" />
+                    <xs:element name="placas" type="xs:string" />
+                    <xs:element name="cobertura1" type="xs:string" />
+                    <xs:element name="cobertura2" type="xs:string" />
+                    <xs:element name="cobertura3" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

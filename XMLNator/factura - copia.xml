@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<encabezado>
+		<producto>
+			<codigo>000000000012</codigo>
+			<nombre>seguro vehiculo</nombre>
+		</producto>
+		<poliza>
+			<numero>000000002345</numero>
+			<codigo>0000000001A5</codigo>
+		</poliza>
+		<vigencia>
+			<inicial>05/20/2012</inicial>
+			<final>07/10/2012</final>
+		</vigencia>
+		<contratante>
+			<nombre>Juan Jose Arevalo Martinez</nombre>
+			<nit>9527670</nit>
+			<direccion>
+				<contratante>1ra. Calle 3-54 Z 4 Guatemala</contratante>
+				<cobro>1ra. Calle 3-54 Z 4 Guatemala</cobro> 
+			</direccion>
+		</contratante>
+		<asegurado>
+			<nombre>Maria Mercedes</nombre>
+			<apellido>Cerezo de Arevalo</apellido>
+		</asegurado>
+	</encabezado>
+	<detalles>
+		<certificado>
+			<numero>000000001234</numero>
+			<nombre>00000000fiat</nombre>
+			<suma>100000</suma>
+		</certificado>
+		<vehiculo>
+			<marca>Audi</marca>
+			<modelo>000000002012</modelo>
+			<linea>Sedan</linea>
+			<chasis>19arf75</chasis>
+			<placas>3B2CGT</placas>
+			<cobertura1>Rojo</cobertura1>
+			<cobertura2>Azul</cobertura2>
+			<cobertura3>Verde</cobertura3>
+		</vehiculo>
+	</detalles>
+</xml>
